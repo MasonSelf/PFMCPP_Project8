@@ -3,7 +3,7 @@
 #include <iostream>
 #include <limits>
 
-struct Motorcycle : public Vehicle
+struct Motorcycle : Vehicle
 {
     Motorcycle(const std::string& n);
     

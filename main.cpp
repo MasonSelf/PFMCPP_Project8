@@ -48,6 +48,7 @@ your task:
 #include "Car.h"
 #include "Motorcycle.h"
 #include "SemiTruck.h"
+#include "HighwayPatrol.h"
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
