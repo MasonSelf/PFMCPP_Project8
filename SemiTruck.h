@@ -7,5 +7,5 @@ struct SemiTruck :  Vehicle
 {
     SemiTruck(const std::string& n);
     void complientlyPullOver();
-    closeWindows();
+    void closeWindows();
 };
