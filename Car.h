@@ -1,4 +1,5 @@
 #pragma once
+#include "Vehicle.h"
 
 struct Car : public Vehicle
 {
@@ -7,3 +8,5 @@ struct Car : public Vehicle
 
     void tryToEvade();
 };
+
+
