@@ -1,6 +1,9 @@
 #include "SemiTruck.h"
 #include "Highway.h"
+
 SemiTruck::SemiTruck(const std::string& n) : Vehicle(n) {}
+
+SemiTruck::~SemiTruck() = default;
 
 void SemiTruck::complientlyPullOver()
 {

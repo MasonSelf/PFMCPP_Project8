@@ -44,11 +44,13 @@ your task:
 #include <vector>
 #include <algorithm>
 #include <cassert>
+
 #include "Highway.h"
 #include "Car.h"
 #include "Motorcycle.h"
 #include "SemiTruck.h"
 #include "HighwayPatrol.h"
+#include "Vehicle.h"
 
 /*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
@@ -126,7 +128,7 @@ int main()
 
     trucks.emplace_back("walmart");
     
-    assert(false);
+    //assert(false);
     //add the cars, motorcycles and trucks to the highway using range-based for() loops: for( element : vec ) { ... }
     //be careful to not accidentally make element copies when iterating.
     

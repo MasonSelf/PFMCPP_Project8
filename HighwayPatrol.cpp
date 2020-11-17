@@ -7,6 +7,8 @@ HighwayPatrol::HighwayPatrol() : Vehicle("HighwayPatrol")
 
 }
 
+HighwayPatrol::~HighwayPatrol() = default;
+
 void HighwayPatrol::scanHighway(Highway* h)
 {
     std::cout << name << ": scanning highway for speeders" << std::endl;
@@ -34,3 +36,4 @@ void HighwayPatrol::pullOver( Vehicle* v, bool willArrest, Highway* h )
         h->removeVehicle(v);
     }
 }
+
