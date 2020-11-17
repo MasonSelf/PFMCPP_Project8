@@ -121,12 +121,13 @@ int main()
      now reserve and emplace_back your Trucks and Motorcyles
      */
     motorcycles.reserve(2);
-    trucks.reserve(1);
+    trucks.reserve(2);
 
     motorcycles.emplace_back("crotchRocket1");
-    motorcycles.emplace_back("cortchRocket2");
+    motorcycles.emplace_back("crotchRocket2");
 
     trucks.emplace_back("walmart");
+    trucks.emplace_back("safeway");
     
     //assert(false);
     //add the cars, motorcycles and trucks to the highway using range-based for() loops: for( element : vec ) { ... }
