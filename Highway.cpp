@@ -21,17 +21,14 @@ void Highway::addVehicleInternal(Vehicle* v)
     depending on the derived type, call the member function that doesn't evade the cops. 
     */
 
-    Car* car = dynamic_cast<Car*>(v);
-    if ( car )
+    if ( auto* car = dynamic_cast<Car*>(v) )
         car->closeWindows();
     
-    SemiTruck* sT = dynamic_cast<SemiTruck*>(v);
-    if (sT )
+    if (auto* sT = dynamic_cast<SemiTruck*>(v) )
         sT->closeWindows();
 
-    Motorcycle* m = dynamic_cast<Motorcycle*>(v);
-    if ( m )
-        m->setSpeed(speedLimit);
+    if ( auto* m = dynamic_cast<Motorcycle*>(v) )
+        m->lanesplitAndRace( 89 );
 }
 
 void Highway::removeVehicleInternal(Vehicle* v)
