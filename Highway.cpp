@@ -41,16 +41,13 @@ void Highway::removeVehicleInternal(Vehicle* v)
     trucks pull over, but cars and bikes try to evade!!
     */
 
-    Car* car = dynamic_cast<Car*>(v);
-    if ( car )
+    if ( auto* car = dynamic_cast<Car*>(v) )
         car->tryToEvade();
 
-    SemiTruck* sT = dynamic_cast<SemiTruck*>(v);
-    if ( sT )
+    else if ( auto* sT = dynamic_cast<SemiTruck*>(v) )
         sT->complientlyPullOver();
 
-    Motorcycle* m = dynamic_cast<Motorcycle*>(v);
-    if ( m )
+    else if ( auto* m = dynamic_cast<Motorcycle*>(v) )
         m->tryToEvade();
 
 }
