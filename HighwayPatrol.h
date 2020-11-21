@@ -9,8 +9,8 @@ struct HighwayPatrol : Vehicle
     HighwayPatrol();
 
     virtual ~HighwayPatrol() override;
-    HighwayPatrol(const HighwayPatrol&) = default;
-    HighwayPatrol& operator=(const HighwayPatrol&) = default;
+    HighwayPatrol(const HighwayPatrol&);
+    HighwayPatrol& operator = (const HighwayPatrol&);
 
     void scanHighway(Highway* h);
 
