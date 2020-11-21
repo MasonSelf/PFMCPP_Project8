@@ -13,7 +13,7 @@ void Motorcycle::lanesplitAndRace( int topSpeed )
 void Motorcycle::tryToEvade()
 {
     std::cout << name << ": you'll never take me alive, ya dirty coppers!" << std::endl;
-    setSpeed(120);
+    setSpeed(1001);
 }
 
 void Motorcycle::setSpeed(int s)

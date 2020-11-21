@@ -28,7 +28,7 @@ void Highway::addVehicleInternal(Vehicle* v)
         sT->closeWindows();
 
     else if ( auto* m = dynamic_cast<Motorcycle*>(v) )
-        m->lanesplitAndRace( 89 );
+        m->lanesplitAndRace( 1000 );
 }
 
 void Highway::removeVehicleInternal(Vehicle* v)
